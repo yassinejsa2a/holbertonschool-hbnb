@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Details</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/icon.png">
+    <link rel="apple-touch-icon" href="/images/icon.png">
+    <meta name="theme-color" content="#2d1850">
+</head>
+<body>
+    <header>
+        <img src="/images/logo.png" alt="Logo" class="logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="login.html" id="login-link" class="login-button">Login</a>
+            <button id="logout-button" class="login-button" style="display: none;">Logout</button>
+        </nav>
+    </header>
+    <main>
+        <section class="place-details">
+            <h2>Place Details</h2>
+            <!-- Place details will be populated dynamically by JavaScript -->
+        </section>
+        
+        <section class="reviews">
+            <h2>Reviews</h2>
+            <!-- Reviews will be populated dynamically by JavaScript -->
+        </section>
+        
+        <section class="add-review">
+            <h2>Add a Review</h2>
+            <form id="review-form">
+                <label for="review-text">Review:</label>
+                <textarea id="review-text" name="review-text" required></textarea>
+                
+                <label for="rating">Rating:</label>
+                <select id="rating" name="rating" required>
+                    <option value="">Select a rating</option>
+                    <option value="1">1/5</option>
+                    <option value="2">2/5</option>
+                    <option value="3">3/5</option>
+                    <option value="4">4/5</option>
+                    <option value="5">5/5</option>
+                </select>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
